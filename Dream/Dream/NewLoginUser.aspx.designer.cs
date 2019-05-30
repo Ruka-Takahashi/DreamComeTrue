@@ -22,6 +22,15 @@ namespace Dream {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// Error コントロール。
+        /// </summary>
+        /// <remarks>
+        /// 自動生成されたフィールド。
+        /// 変更するには、フィールドの宣言をデザイナー ファイルから分離コード ファイルに移動します。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Error;
+        
+        /// <summary>
         /// ID_TextBox コントロール。
         /// </summary>
         /// <remarks>

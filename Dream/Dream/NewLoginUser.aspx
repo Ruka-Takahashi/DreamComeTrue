@@ -11,6 +11,9 @@
     <form id="form1" runat="server">
     <div>
     <h1>ログインユーザー登録画面</h1>
+        <p>
+            <asp:Label ID="Error" runat="server" Text="Label"></asp:Label>
+        </p>
 
         ユーザーID：<asp:TextBox ID="ID_TextBox" runat="server"></asp:TextBox><br />
         パスワード：<asp:TextBox ID="PW_TextBox" runat="server"></asp:TextBox><br />
