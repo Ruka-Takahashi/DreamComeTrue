@@ -32,8 +32,6 @@ namespace Dream
             else
             {
                 Error.Text = "未入力の内容があります。";
-
-
             }
         }
     }
