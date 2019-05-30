@@ -19,6 +19,8 @@
           &nbsp;&nbsp;
           <asp:Button　Cssclass="corsol" ID="Button5" runat="server" Text="従業員検索" OnClick="Button5_Click" />
 
+          &nbsp;&nbsp;&nbsp;
+
           <asp:Button Cssclass="corsol" ID="Button2" runat="server" OnClick="Button2_Click" Text="従業員登録" name="New_button"/>
           &nbsp;&nbsp;
           <asp:Button Cssclass="corsol" ID="Button4" runat="server" Text="利用者登録" OnClick="Button4_Click" />
