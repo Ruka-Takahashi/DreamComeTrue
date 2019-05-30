@@ -1,0 +1,87 @@
+﻿
+body {
+    text-align:center;
+}
+/*table{
+    margin:8px auto;
+    border:double;
+}
+th{
+    border:1px solid black;
+    padding:8px;
+    border:solid;
+    border-width:thin;
+}*/
+.blue{
+    background-color:lightcyan;
+}
+span{
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+h1{
+    font-family:
+   "MS 明朝",
+   serif;
+font-weight: bold;
+}
+h1:first-letter {
+  font-size: 2em;
+  color: #7172ac;
+}
+
+.span1{
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+.span2{
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+    font-size:80%;
+}
+/*.corsol{
+    
+    padding:0.3em 1em;
+    text-decoration:none;
+    color:#00bfff;
+    border:solid 2px white;
+    border-radius:3px;
+    transition:.4s;
+
+}*/
+/*th{
+    font-weight: lighter;
+}*/
+/*.corsol:hover{
+    background:aqua;
+    color:white;
+}*/
+
+
+.corsol:hover {
+    color: white;
+ background: limegreen;
+}
+.corsol{
+display: inline-block;
+  text-decoration: none;
+  font-size:large;
+  color: limegreen;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: solid 2px limegreen;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .4s;
+
+  cursor:pointer;
+     display:inline-block;
+}
+.corsol:active{
+    
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px) ;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  border-bottom: none;
+  color:green;
+}

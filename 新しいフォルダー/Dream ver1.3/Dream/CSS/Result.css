@@ -1,0 +1,18 @@
+﻿body {
+    text-align:center;
+
+}
+span{
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+h1{
+    font-family:
+   "MS 明朝",
+   serif;
+font-weight: bold;
+}
+h1:first-letter {
+  font-size: 2em;
+  color: #7172ac;
+}
+

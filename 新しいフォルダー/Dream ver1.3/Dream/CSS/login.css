@@ -1,0 +1,39 @@
+﻿body {
+    text-align:center;
+}
+.span1{
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+}
+.span2{
+    background: linear-gradient(transparent 60%, #ffff66 60%);
+    font-size:80%;
+}
+h1:first-letter {
+  font-size: 2em;
+  color: #7172ac;
+}
+h1 {
+
+font-family:
+   "MS 明朝",
+   serif;
+font-weight: bold;
+}
+.b{
+    cursor:pointer;
+     display:inline-block;
+    padding:0.3em 1em;
+    text-decoration:none;
+    color:#7172ac;
+    border:solid 2px #7172ac;
+    border-radius:3px;
+    transition:.4s;
+}
+.b:hover{
+    background:#7172ac;
+    color:white;
+    background: #00bcd4;
+  color: white;
+
+
+}
