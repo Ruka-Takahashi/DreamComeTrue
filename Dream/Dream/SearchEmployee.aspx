@@ -11,6 +11,8 @@
     <form id="form1" runat="server">
     <div>
         <p>
+            &nbsp;</p>
+        <p>
         所属部署<br />
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="section" DataTextField="section_nm" DataValueField="section_cd" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true">
         </asp:DropDownList>
