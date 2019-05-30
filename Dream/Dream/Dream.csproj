@@ -99,6 +99,7 @@
     <Content Include="CSS\logout.css" />
     <Content Include="CSS\menu.css" />
     <Content Include="CSS\new.css" />
+    <Content Include="CSS\NewLoginUser.css" />
     <Content Include="NewLoginUser.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
@@ -117,12 +118,15 @@
     <Content Include="logout.html" />
     <Content Include="Menu.aspx" />
     <Content Include="NewUser.aspx" />
+    <Content Include="Result.css" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Result.aspx" />
     <Content Include="SearchEmployee.aspx" />
     <Content Include="test.html" />
     <Content Include="UpDateUser.aspx" />
+    <Content Include="CSS\UpDateUser.css" />
+    <Content Include="CSS\UseList.css" />
     <Content Include="UserList.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
