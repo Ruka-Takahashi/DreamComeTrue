@@ -32,7 +32,7 @@ namespace Dream.Models.Dao
                     if(i == 1)
                         error = "削除しました。";
                     else
-                        error = "削除できません。";
+                        error = "削除できませんでした。";
 
                     //ここで確定
                     trn.Commit();
@@ -40,7 +40,7 @@ namespace Dream.Models.Dao
             }
             catch (SqlException e)
             {
-                error = "削除できません。";
+                error = "削除できませんでした。";
             }
             return error;
         }

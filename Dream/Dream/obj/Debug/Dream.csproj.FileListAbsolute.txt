@@ -1,4 +1,4 @@
-﻿C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET\Dream\Dream\obj\Debug\Dream.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET\Dream\Dream\obj\Debug\Dream.csprojResolveAssemblyReference.cache
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET\Dream\Dream\bin\ApplicationInsights.config
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET\Dream\Dream\bin\roslyn\csc.exe
 C:\Users\user\Documents\Visual Studio 2015\Projects\ASP.NET\Dream\Dream\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
