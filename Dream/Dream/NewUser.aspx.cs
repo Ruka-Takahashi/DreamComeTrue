@@ -43,7 +43,7 @@ namespace Dream
             using (TranMng TM = new TranMng())
             {
                 //現在保存しているセッションを削除
-                InsertDao ID = new InsertDao();
+                EmployeeDao ID = new EmployeeDao();
                 Session.Remove("msg");
                 string error = "";
                 try

@@ -18,7 +18,7 @@ namespace Dream
             {
                 using (TranMng TM = new TranMng())
                 {
-                    SelectDao SD = new SelectDao();
+                    EmployeeDao SD = new EmployeeDao();
                     int count = SD.Select();
                     if (count == 0)
                     {
@@ -41,7 +41,7 @@ namespace Dream
         {
             using (TranMng TM = new TranMng())
             {
-                DeleteDao DD = new DeleteDao();
+                EmployeeDao DD = new EmployeeDao();
                 string error = DD.Delete(Emp_Cd_List.Text);
                 Session.Add("msg", error);
                 Server.Transfer("Result.aspx");
