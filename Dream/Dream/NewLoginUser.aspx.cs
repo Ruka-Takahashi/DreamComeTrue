@@ -45,5 +45,9 @@ namespace Dream
                 Error.Text = "未入力の内容があります。";
             }
         }
+
+        protected void Button1_Click(object sender, EventArgs e) {
+            Server.Transfer("Menu.aspx");
+        }
     }
 }

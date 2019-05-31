@@ -118,7 +118,7 @@
     <Content Include="logout.html" />
     <Content Include="Menu.aspx" />
     <Content Include="NewUser.aspx" />
-    <Content Include="Result.css" />
+    <Content Include="CSS\Result.css" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Result.aspx" />
