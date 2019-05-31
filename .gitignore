@@ -1,1 +1,4 @@
 .vs/Dream/v14/.suo
+bin/
+obj/
+.suo 
