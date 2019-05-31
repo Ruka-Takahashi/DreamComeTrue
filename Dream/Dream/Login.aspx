@@ -14,7 +14,7 @@
     <div>
         <h1>夢創造委員会</h1>
         <h2>ログイン</h2>
-        <p>ユーザID：<asp:TextBox ID="TextBox1" runat="server"  Height="20px" Width="150px"></asp:TextBox>
+        <p>ユーザID：<asp:TextBox ID="TextBox1" CssClass="inactive" runat="server"  Height="20px" Width="150px"></asp:TextBox>
         </p>
         <p>パスワード：<asp:TextBox ID="TextBox2" runat="server"  Height="20px" Width="135px" TextMode="Password"></asp:TextBox>
         </p>

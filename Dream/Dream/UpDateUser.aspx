@@ -30,7 +30,7 @@
         </table>
 
         <br />
-        <asp:Button ID="Button1" runat="server" Text="更新" OnClick="Button1_Click" />
+        <asp:Button ID="UpDateButton" runat="server" Text="更新" OnClick="Button1_Click" />
         <br />
         <hr />
         <p>＠<span class="span1">夢創造委員会</span><br /><span class="span2">The Dream Creation Committee</span></p>

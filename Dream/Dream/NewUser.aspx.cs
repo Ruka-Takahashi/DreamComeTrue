@@ -62,8 +62,10 @@ namespace Dream
                     //エラーにはエラーメッセージが返ってくる
                     string BirthDay = BirthYearList.Text + "/" + BirthMonthList.Text + "/" + BirthDayList.Text;
                     string Join = JoinYearList.Text + "/" + JoinMonthList.Text + "/" + JoinDayList.Text;
-                    error = ID.Insert(TextBox1.Text, TextBox2.Text, TextBox4.Text, TextBox3.Text, TextBox5.Text, int.Parse(DropDownList1.Text), BirthDay, DropDownList2.Text, Join);
-
+                    if (TextBox1.Text != ""&& TextBox1.Text !=" ")
+                        error = ID.Insert(TextBox1.Text, TextBox2.Text, TextBox4.Text, TextBox3.Text, TextBox5.Text, int.Parse(DropDownList1.Text), BirthDay, DropDownList2.Text, Join);
+                    else
+                        throw new FormatException();
                 }
                 //catch (FormatException)
                 //{

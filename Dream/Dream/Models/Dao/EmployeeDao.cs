@@ -24,6 +24,7 @@ namespace Dream.Models.Dao
             string error = null;
             try
             {
+                
                 using (SqlCommand cmd = new SqlCommand("INSERT INTO m_employee VALUES(@emp_cd,@last_nm,@first_nm,@last_nm_kana,@first_nm_kana,@gender_cd,@birth_date,@section_cd,@emp_date,@date,@date)", con, trn))
                 {
                     cmd.Parameters.Add(new SqlParameter("@emp_cd", SqlDbType.Char)).Value = emp_cd;
