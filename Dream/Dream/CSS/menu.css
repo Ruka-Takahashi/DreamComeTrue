@@ -85,3 +85,67 @@ display: inline-block;
   border-bottom: none;
   color:green;
 }
+
+.NewUser:hover{
+    color: white;
+ background: mediumblue;
+}
+
+.NewUser{
+display: inline-block;
+  text-decoration: none;
+  font-size:large;
+  color: mediumblue;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: solid 2px mediumblue;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .4s;
+
+  cursor:pointer;
+     display:inline-block;
+}
+
+.NewUser:active{
+    
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px) ;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  border-bottom: none;
+  color:navy;
+}
+
+.Logout:hover {
+    color: white;
+ background: red;
+}
+.Logout{
+display: inline-block;
+  text-decoration: none;
+  font-size:large;
+  color: red;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: solid 2px red;
+  text-align: center;
+  overflow: hidden;
+  font-weight: bold;
+  transition: .4s;
+
+  cursor:pointer;
+     display:inline-block;
+}
+.Logout:active{
+    
+  -webkit-transform: translateY(1px);
+  transform: translateY(1px) ;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.35);
+  border-bottom: none;
+  color:darkred;
+}

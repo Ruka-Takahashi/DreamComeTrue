@@ -22,12 +22,12 @@
           &nbsp;&nbsp;&nbsp;
 
           <asp:Button Cssclass="corsol" ID="Button2" runat="server" OnClick="Button2_Click" Text="従業員登録" name="New_button"/>
-          &nbsp;&nbsp;
-          <asp:Button Cssclass="corsol" ID="Button4" runat="server" Text="利用者登録" OnClick="Button4_Click" />
+          &nbsp;&nbsp;</p>
+        <p>&nbsp;<asp:Button Cssclass="NewUser" ID="Button4" runat="server" Text="利用者登録" OnClick="Button4_Click" />
           &nbsp;&nbsp;
           
  
-         <asp:Button  CssClass="corsol" ID="Button3" runat="server" Text="ログアウト"   OnClick="Button3_Click" name="Out_button"/></p>
+         <asp:Button  CssClass="Logout" ID="Button3" runat="server" Text="ログアウト"   OnClick="Button3_Click" name="Out_button"/></p>
         <br />
         <hr />
         <p>＠<span class="span1">夢創造委員会</span><br /><span class="span2">The Dream Creation Committee</span></p>
