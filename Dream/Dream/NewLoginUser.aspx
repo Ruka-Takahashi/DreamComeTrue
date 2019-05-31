@@ -25,7 +25,7 @@
         <br />
         <asp:Button ID="CreateUser_Button" runat="server" Text="登録" OnClick="CreateUser_Button_Click" />
     &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="戻る" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click1" Text="戻る" />
     </div>
         <br />
         <hr />
