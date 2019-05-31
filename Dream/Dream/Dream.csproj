@@ -145,11 +145,12 @@
     <Compile Include="Menu.aspx.designer.cs">
       <DependentUpon>Menu.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Dao\DeleteDao.cs" />
-    <Compile Include="Models\Dao\InsertDao.cs" />
-    <Compile Include="Models\Dao\LoginDao.cs" />
-    <Compile Include="Models\Dao\SelectDao.cs" />
-    <Compile Include="Models\Dao\UpDateDao.cs" />
+    <Compile Include="Models\Dao\EmployeeDao.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\Dao\UserDao.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Models\Entity\DUser.cs" />
     <Compile Include="Models\Entity\EUser.cs" />
     <Compile Include="Models\TranMng.cs" />
