@@ -16,7 +16,7 @@
         <h2>ログイン</h2>
         <p>ユーザID：<asp:TextBox ID="TextBox1" runat="server"  Height="20px" Width="150px"></asp:TextBox>
         </p>
-        <p>パスワード：<asp:TextBox ID="TextBox2" runat="server"  Height="20px" Width="135px"></asp:TextBox>
+        <p>パスワード：<asp:TextBox ID="TextBox2" runat="server"  Height="20px" Width="135px" TextMode="Password"></asp:TextBox>
         </p>
         <asp:Button ID="Button1" runat="server" Text="ログイン" OnClick="Button1_Click" name="In_button"/>
         <hr />

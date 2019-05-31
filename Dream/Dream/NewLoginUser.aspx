@@ -16,7 +16,7 @@
         </p>
 
         ユーザーID：<asp:TextBox ID="ID_TextBox" runat="server"></asp:TextBox><br />
-        パスワード：<asp:TextBox ID="PW_TextBox" runat="server"></asp:TextBox><br />
+        パスワード：<asp:TextBox ID="PW_TextBox" runat="server" TextMode="Password"></asp:TextBox><br />
 
         <asp:Button ID="CreateUser_Button" runat="server" Text="登録" OnClick="CreateUser_Button_Click" />
     </div>
