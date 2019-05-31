@@ -20,14 +20,25 @@ namespace Dream
         {
             string id = ID_TextBox.Text;
             string pw = PW_TextBox.Text;
+            string pw_cheak = PW_Check.Text;
 
             if (id != ""&&pw !="")
-            using (TranMng TM = new TranMng())
             {
-                InsertDao ID = new InsertDao();
-                string msg = ID.Insert_LoginUser(ID_TextBox.Text, PW_TextBox.Text);
-                Session.Add("msg", msg);
-                Server.Transfer("Result.aspx");
+                if(pw == pw_cheak)
+                {
+                    using (TranMng TM = new TranMng())
+                    {
+                        InsertDao ID = new InsertDao();
+                        string msg = ID.Insert_LoginUser(ID_TextBox.Text, PW_TextBox.Text);
+                        Session.Add("msg", msg);
+                        Server.Transfer("Result.aspx");
+                    }
+                }
+                else
+                {
+                    Error.Text = "パスワードが一致しません。";
+
+                }
             }
             else
             {
