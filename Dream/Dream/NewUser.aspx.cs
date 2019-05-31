@@ -17,7 +17,9 @@ namespace Dream
             //初めにページを開いたときのみ年月のリストを生成します（日にちも３１日までで作ります）
             if (!IsPostBack)
             {
-                for (int i = 1940; i <= 2020; i++)
+                DateTime dNow = System.DateTime.Now;
+                int Year = dNow.Year;
+                for (int i = Year - 80; i <= Year; i++)
                 {
                     BirthYearList.Items.Add(i.ToString());
                     JoinYearList.Items.Add(i.ToString());
