@@ -11,16 +11,25 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    <h1>ログインユーザー登録画面</h1>
+    <h1>夢創造委員会</h1>
+    <h2>ログインユーザー登録画面</h2>
         <p>
             <asp:Label ID="Error" runat="server" Text="Label"></asp:Label>
         </p>
-
-        ユーザーID：<asp:TextBox ID="ID_TextBox" runat="server"></asp:TextBox><br />
-        パスワード：<asp:TextBox ID="PW_TextBox" runat="server" TextMode="Password"></asp:TextBox><br />
-        パスワード(確認用)：<asp:TextBox ID="PW_Check" runat="server" TextMode="Password"></asp:TextBox>
+        <table>
+            <tr><th align="left">ユーザーID：</th><th align="left"> <asp:TextBox ID="ID_TextBox" runat="server"></asp:TextBox></th></tr>
+            <tr><th align="left">パスワード：</th><th align="left"><asp:TextBox ID="PW_TextBox" runat="server" TextMode="Password"></asp:TextBox><br /></th></tr>
+            <tr><th align="left">パスワード(確認用)：</th><th align="left"> <asp:TextBox ID="PW_Check" runat="server" TextMode="Password"></asp:TextBox></th></tr>        
+        </table>
+                 
+        <br />
         <asp:Button ID="CreateUser_Button" runat="server" Text="登録" OnClick="CreateUser_Button_Click" />
+    &nbsp;&nbsp;&nbsp;
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="戻る" />
     </div>
+        <br />
+        <hr />
+        <p>＠<span class="span1">夢創造委員会</span><br /><span class="span2">The Dream Creation Committee</span></p>
     </form>
 </body>
 </html>

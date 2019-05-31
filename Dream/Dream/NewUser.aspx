@@ -45,6 +45,7 @@
         </table>
         <br />
         <asp:Button ID="Button1" runat="server" Text="登録" OnClick="Button1_Click" />
+        &nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button2" runat="server" Text="戻る" OnClick="Button2_Click" />
         <br />
         <hr />
