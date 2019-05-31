@@ -6,18 +6,19 @@
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
+    <link rel="stylesheet" href="CSS/SearchEmployee.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <p>
-            従業員コード</p>
+        <h1>夢創造委員会</h1>
+        <h2>従業員検索</h2>
+        <p>従業員コード</p>
         <p>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="検索" />
         </p>
-        <p>
-            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="emp_cd" DataSourceID="Search2" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+       
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="emp_cd" DataSourceID="Search2" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
                 <Columns>
                     <asp:BoundField DataField="emp_cd" HeaderText="従業員コード" ReadOnly="True" SortExpression="emp_cd" />
                     <asp:BoundField DataField="last_nm" HeaderText="氏" SortExpression="last_nm" />
@@ -42,13 +43,14 @@
                 <SortedDescendingCellStyle BackColor="#D6DFDF" />
                 <SortedDescendingHeaderStyle BackColor="#002876" />
             </asp:GridView>
+
             <asp:SqlDataSource ID="Search2" runat="server" ConnectionString="<%$ ConnectionStrings:Dream_dbConnectionString %>" SelectCommand="SELECT m_employee.emp_cd, m_employee.last_nm, m_employee.first_nm, m_employee.last_nm_kana, m_employee.first_nm_kana, m_employee.birth_date, m_employee.emp_date, m_gender.gender_nm, m_section.section_nm FROM m_employee INNER JOIN m_gender ON m_employee.gender_cd = m_gender.gender_cd INNER JOIN m_section ON m_employee.section_cd = m_section.section_cd
-WHERE [emp_cd] = @emp_cd">
+                                WHERE [emp_cd] = @emp_cd">
                 <SelectParameters>
                     <asp:ControlParameter ControlID="TextBox1" Name="emp_cd" PropertyName="Text" />
                 </SelectParameters>
             </asp:SqlDataSource>
-        </p>
+ 
         <p>
         所属部署<br />
         <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="section" DataTextField="section_nm" DataValueField="section_cd" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true">
@@ -56,7 +58,7 @@ WHERE [emp_cd] = @emp_cd">
         </p>
         <asp:SqlDataSource ID="section" runat="server" ConnectionString="<%$ ConnectionStrings:Dream_dbConnectionString %>" SelectCommand="SELECT [section_cd], [section_nm] FROM [m_section]"></asp:SqlDataSource>
         <br />
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="emp_cd" DataSourceID="Search" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="emp_cd" DataSourceID="Search" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
             <Columns>
                 <asp:BoundField DataField="emp_cd" HeaderText="従業員コード" ReadOnly="True" SortExpression="emp_cd" />
                 <asp:BoundField DataField="last_nm" HeaderText="氏" SortExpression="last_nm" />
@@ -81,6 +83,7 @@ WHERE [emp_cd] = @emp_cd">
             <SortedDescendingCellStyle BackColor="#D6DFDF" />
             <SortedDescendingHeaderStyle BackColor="#002876" />
         </asp:GridView>
+
         <asp:SqlDataSource ID="Search" runat="server" ConnectionString="<%$ ConnectionStrings:Dream_dbConnectionString %>" SelectCommand="SELECT m_employee.emp_cd, m_employee.last_nm, m_employee.first_nm, m_employee.last_nm_kana, m_employee.first_nm_kana, m_employee.birth_date, m_employee.emp_date, m_gender.gender_nm, m_section.section_nm FROM m_employee INNER JOIN m_gender ON m_employee.gender_cd = m_gender.gender_cd INNER JOIN m_section ON m_employee.section_cd = m_section.section_cd WHERE (m_employee.section_cd = @section_cd)">
             <SelectParameters>
                 <asp:ControlParameter ControlID="DropDownList1" Name="section_cd" PropertyName="SelectedValue" />
@@ -88,7 +91,6 @@ WHERE [emp_cd] = @emp_cd">
         </asp:SqlDataSource>
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="戻る" />
-    </div>
     </form>
 </body>
 </html>
