@@ -48,7 +48,7 @@ namespace Dream.Models.Dao
             }
             catch (SqlException)
             {
-                error = "更新できませんでした";
+                error = "更新できませんでした。";
             }
             return error;
         }

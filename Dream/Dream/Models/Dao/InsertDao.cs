@@ -52,7 +52,7 @@ namespace Dream.Models.Dao
             }
             catch (SqlException)
             {
-                error = "その社員はもう存在します。";
+                error = "登録できませんでした。";
             }
             return error;
         }
@@ -83,7 +83,7 @@ namespace Dream.Models.Dao
             }
             catch (SqlException)
             {
-                message = "その社員はもう存在します。";
+                message = "登録できませんでした。";
             }
             return message;
         }
