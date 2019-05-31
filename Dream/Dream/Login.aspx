@@ -12,7 +12,7 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1>夢創造委員会</h1>
+        <h1>創造委員会</h1>
         <h2>ログイン</h2>
         <p>ユーザID：<asp:TextBox ID="TextBox1" runat="server"  Height="20px" Width="150px"></asp:TextBox>
         </p>
