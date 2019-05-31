@@ -15,21 +15,21 @@
     <div>
         <table>
             <tr><td align="left">従業員コード：</td><td align="left"><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-                <asp:Label ID="Req1" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
+                <asp:Label Cssclass="hissu" ID="Req1" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
                 <br /></td></tr>
             <tr><td align="left">氏：</td><td align="left"><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                <asp:Label ID="Req2" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
+                <asp:Label Cssclass="hissu" ID="Req2" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
                 <br /></td></tr>
             <tr><td align="left">氏(ふりがな) :</td><td align="left"><asp:TextBox ID="TextBox3" runat="server"></asp:TextBox><br /></td></tr>
             <tr><td align="left">名：</td><td align="left"><asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-                <asp:Label ID="Req3" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
+                <asp:Label Cssclass="hissu" ID="Req3" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
                 <br /></td></tr>
             <tr><td align="left">名(ふりがな):</td><td align="left"><asp:TextBox ID="TextBox5" runat="server"></asp:TextBox><br /></td></tr>
             <tr><td align="left">性別：</td><td align="left"><asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" 
                      DataTextField="gender_nm" DataValueField="gender_cd" AppendDataBoundItems="True">
                      <asp:ListItem Value="" Text="&lt;未選択&gt;" />
                      </asp:DropDownList>
-                     <asp:Label ID="Req4" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
+                     <asp:Label  Cssclass="hissu" ID="Req4" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
                      <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:Dream_dbConnectionString %>" SelectCommand="SELECT [gender_cd], [gender_nm] FROM [m_gender]"></asp:SqlDataSource>
                      <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dream_dbConnectionString %>" SelectCommand="SELECT [section_cd], [section_nm] FROM [m_section]"></asp:SqlDataSource>
                      </td></tr>
@@ -39,7 +39,7 @@
                      </asp:DropDownList>
                      <asp:DropDownList ID="BirthDayList" runat="server">
                      </asp:DropDownList>
-                     <asp:Label ID="Req5" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
+                     <asp:Label Cssclass="hissu" ID="Req5" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
                      </td></tr>
             <tr><td align="left">所属コード:</td><td align="left"><asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource1" DataTextField="section_nm" DataValueField="section_cd">
                      </asp:DropDownList></td></tr>
@@ -49,7 +49,7 @@
                      </asp:DropDownList>
                      <asp:DropDownList ID="JoinDayList" runat="server">
                      </asp:DropDownList>
-                <asp:Label ID="Req6" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
+                <asp:Label Cssclass="hissu" ID="Req6" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
                 </td></tr>
 
         </table>
