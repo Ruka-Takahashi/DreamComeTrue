@@ -12,9 +12,12 @@
    <form id="form1" runat="server">
     <h1>夢創造委員会</h1>
     <h2>従業員登録画面</h2>
+       <p>
+           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+       </p>
     <div>
         <table>
-            <tr><td align="left">従業員コード：</td><td align="left"><asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <tr><td align="left">従業員コード：</td><td align="left"><asp:TextBox ID="TextBox1" runat="server" ForeColor="#000099"></asp:TextBox>
                 <asp:Label Cssclass="hissu" ID="Req1" runat="server" Text="Label" ForeColor="#999999"></asp:Label>
                 <br /></td></tr>
             <tr><td align="left">氏：</td><td align="left"><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>

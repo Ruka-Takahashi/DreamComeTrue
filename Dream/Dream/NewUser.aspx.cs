@@ -65,6 +65,11 @@ namespace Dream
                     error = ID.Insert(TextBox1.Text, TextBox2.Text, TextBox4.Text, TextBox3.Text, TextBox5.Text, int.Parse(DropDownList1.Text), BirthDay, DropDownList2.Text, Join);
 
                 }
+                //catch (FormatException)
+                //{
+                //    Label1.Text = "未入力項目があります";
+                //}
+                //Server.Transfer("Result.aspx");
                 catch (FormatException)
                 {
                     error = "未入力項目があります。";
