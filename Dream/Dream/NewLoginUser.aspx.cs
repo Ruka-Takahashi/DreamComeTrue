@@ -28,8 +28,8 @@ namespace Dream
                 {
                     using (TranMng TM = new TranMng())
                     {
-                        InsertDao ID = new InsertDao();
-                        string msg = ID.Insert_LoginUser(ID_TextBox.Text, PW_TextBox.Text);
+                        UserDao ID = new UserDao();
+                        string msg = ID.Insert(ID_TextBox.Text, PW_TextBox.Text);
                         Session.Add("msg", msg);
                         Server.Transfer("Result.aspx");
                     }

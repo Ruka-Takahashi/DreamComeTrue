@@ -24,7 +24,7 @@ namespace Dream
                     string UserId = Session["UserId"].ToString();
                     user.Text = UserId;
                     //選んだユーザーの情報をエンティティに保存
-                    SelectDao SD = new SelectDao();
+                    EmployeeDao SD = new EmployeeDao();
                     EU = SD.Select(UserId);
                     last_nm.Text = EU.last_nm;
                     first_nm.Text = EU.first_nm;
@@ -45,7 +45,7 @@ namespace Dream
 
             using (TranMng TM = new TranMng())
             {
-                UpDateDao UD = new UpDateDao();
+                EmployeeDao UD = new EmployeeDao();
                 string msg = UD.UpDate(user.Text, last_nm.Text, first_nm.Text, last_nm_kana.Text, first_nm_kana.Text, int.Parse(DropDownList1.Text), DropDownList2.Text);
                 Session.Add("msg", msg);
                 Server.Transfer("Result.aspx");

@@ -20,7 +20,7 @@ namespace Dream
         {
             using (TranMng TM = new TranMng())
             {
-                LoginDao LD = new LoginDao();
+                UserDao LD = new UserDao();
                 string id = TextBox1.Text;
 
                 DUser duser = LD.Login(id);
