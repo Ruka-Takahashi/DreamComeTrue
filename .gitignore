@@ -1,4 +1,5 @@
-.vs/Dream/v14/.suo
-bin/
-obj/
-.suo 
+Dream/.vs/Dream/v14/.suo
+Dream/Dream/bin/Dream.dll
+Dream/Dream/bin/Dream.pdb
+Dream/Dream/obj/Debug/Dream.dll
+Dream/Dream/obj?Debug/Dream.pdb
