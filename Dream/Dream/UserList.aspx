@@ -10,10 +10,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-        <h1>ユーザー一覧</h1>
+        <h1>夢創造委員会</h1>
+        <h2>ユーザー一覧</h2>
 
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" DataKeyNames="emp_cd" DataSourceID="m_employee" GridLines="None">
+<div style=" width: 806px;
+    height: 236px;
+    /*background: #888;*/
+    margin: 0 auto;">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="White" BorderStyle="Ridge" BorderWidth="2px" CellPadding="3" CellSpacing="1" DataKeyNames="emp_cd" DataSourceID="m_employee" GridLines="None" Width="809px">
             <Columns>
                 <asp:BoundField DataField="emp_cd" HeaderText="従業員コード" ReadOnly="True" SortExpression="emp_cd" />
                 <asp:BoundField DataField="last_nm" HeaderText="氏" SortExpression="last_nm" />
@@ -35,21 +39,27 @@
             <SortedDescendingCellStyle BackColor="#CAC9C9" />
             <SortedDescendingHeaderStyle BackColor="#33276A" />
         </asp:GridView>
+</div>
+<div>
         <asp:SqlDataSource ID="m_employee" runat="server" ConnectionString="<%$ ConnectionStrings:Dream_dbConnectionString2 %>" SelectCommand="SELECT m_employee.emp_cd, m_employee.last_nm, m_employee.first_nm, m_employee.last_nm_kana, m_employee.first_nm_kana, m_gender.gender_nm, m_employee.birth_date, m_section.section_nm, m_employee.emp_date FROM m_employee INNER JOIN m_gender ON m_employee.gender_cd = m_gender.gender_cd INNER JOIN m_section ON m_employee.section_cd = m_section.section_cd"></asp:SqlDataSource>
         <br />
 
-        <asp:DropDownList ID="Emp_Cd_List" runat="server" DataSourceID="SqlDataSource1" DataTextField="emp_cd" DataValueField="emp_cd">
+        従業員コードを選択してください。<asp:DropDownList ID="Emp_Cd_List" runat="server" DataSourceID="SqlDataSource1" DataTextField="emp_cd" DataValueField="emp_cd" Height="25px" Width="155px">
         </asp:DropDownList>
+        <br />
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:Dream_dbConnectionString3 %>" SelectCommand="SELECT [emp_cd] FROM [m_employee]"></asp:SqlDataSource>
         <br />
         <asp:Button ID="UpDateButton" runat="server" Text="更新" OnClick="UpDateButton_Click" />
-        <br />
-
+        &nbsp;&nbsp;&nbsp;
         <asp:Button ID="DeleteButton" runat="server" Text="削除" OnClick="DeleteButton_Click" />
-        <br />
-
+        &nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" Text="戻る" name="Back_button" OnClick="Button1_Click"/>
-    </div>
-    </form>
+</div>        
+        <br />
+        <hr />
+
+       <p>＠<span class="span1">夢創造委員会</span><br /><span class="span2">The Dream Creation Committee</span></p>
+       
+            </form>
 </body>
 </html>

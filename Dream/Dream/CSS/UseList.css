@@ -19,8 +19,8 @@ h1:first-letter {
   color: #7172ac;
 }
 .senter {
-    width: 100px;
+ width: 100px;
     height: 100px;
-    /*background: #888;*/
+    background: #888;
     margin: 0 auto;
 }
