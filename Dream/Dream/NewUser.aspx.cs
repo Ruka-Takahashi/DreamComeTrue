@@ -17,7 +17,15 @@ namespace Dream
             //初めにページを開いたときのみ年月のリストを生成します（日にちも３１日までで作ります）
             if (!IsPostBack)
             {
-                DateTime dNow = System.DateTime.Now;
+                Req1.Text = "必須";
+                Req2.Text = "必須";
+                Req3.Text = "必須";
+                Req4.Text = "必須";
+                Req5.Text = "必須";
+                Req6.Text = "必須";
+
+
+                DateTime dNow = DateTime.Now;
                 int Year = dNow.Year;
                 for (int i = Year - 80; i <= Year; i++)
                 {
