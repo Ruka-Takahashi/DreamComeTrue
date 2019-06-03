@@ -13,6 +13,7 @@ namespace Dream
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            Label1.Text = "";
             int days = 31;
             //初めにページを開いたときのみ年月のリストを生成します（日にちも３１日までで作ります）
             if (!IsPostBack)
@@ -50,35 +51,42 @@ namespace Dream
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            using (TranMng TM = new TranMng())
-            {
-                //現在保存しているセッションを削除
-                EmployeeDao ID = new EmployeeDao();
-                Session.Remove("msg");
-                string error = "";
-                try
-                {
-                    //入力された情報をインサート文に渡す。
-                    //エラーにはエラーメッセージが返ってくる
-                    string BirthDay = BirthYearList.Text + "/" + BirthMonthList.Text + "/" + BirthDayList.Text;
-                    string Join = JoinYearList.Text + "/" + JoinMonthList.Text + "/" + JoinDayList.Text;
-                    error = ID.Insert(TextBox1.Text, TextBox2.Text, TextBox4.Text, TextBox3.Text, TextBox5.Text, int.Parse(DropDownList1.Text), BirthDay, DropDownList2.Text, Join);
 
-                }
-                //catch (FormatException)
-                //{
-                //    Label1.Text = "未入力項目があります";
-                //}
-                //Server.Transfer("Result.aspx");
-                catch (FormatException)
+            if (TextBox1.Text == "" || TextBox2.Text == "" || TextBox4.Text == ""|| DropDownList1.Text == "")
+            {
+                Label1.Text = "未入力の項目があります";
+            }
+            else
+            {
+                using (TranMng TM = new TranMng())
                 {
-                    error = "未入力項目があります。";
+                    //現在保存しているセッションを削除
+                    EmployeeDao ID = new EmployeeDao();
+                    Session.Remove("msg");
+                    string error = "";
+                    try
+                    {
+                        //入力された情報をインサート文に渡す。
+                        //エラーにはエラーメッセージが返ってくる
+                        string BirthDay = BirthYearList.Text + "/" + BirthMonthList.Text + "/" + BirthDayList.Text;
+                        string Join = JoinYearList.Text + "/" + JoinMonthList.Text + "/" + JoinDayList.Text;
+                        error = ID.Insert(TextBox1.Text, TextBox2.Text, TextBox4.Text, TextBox3.Text, TextBox5.Text, int.Parse(DropDownList1.Text), BirthDay, DropDownList2.Text, Join);
+
+                    }
+                    //catch (FormatException)
+                    //{
+                    //    Label1.Text = "未入力項目があります";
+                    //}
+                    //Server.Transfer("Result.aspx");
+                    catch (FormatException)
+                    {
+                       Label1.Text = "未入力項目があります。";
+                    }
+                    Session.Add("msg", error);
+                    Server.Transfer("Result.aspx");
                 }
-                Session.Add("msg", error);
-                Server.Transfer("Result.aspx");
             }
         }
-
         protected void Button2_Click(object sender, EventArgs e)
         {
             Session.Add("gender", DropDownList1.Text);
@@ -199,3 +207,4 @@ namespace Dream
         }
     }
 }
+

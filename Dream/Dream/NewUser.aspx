@@ -13,7 +13,7 @@
     <h1>夢創造委員会</h1>
     <h2>従業員登録画面</h2>
        <p>
-           <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+           <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="Red"></asp:Label>
        </p>
     <div>
         <table>

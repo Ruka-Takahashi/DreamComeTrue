@@ -18,7 +18,7 @@
             <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="検索" />
         </p>
        
-        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="emp_cd" DataSourceID="Search2" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4">
+        <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataKeyNames="emp_cd" DataSourceID="Search2" BackColor="White" BorderColor="#3366CC" BorderStyle="None" BorderWidth="1px" CellPadding="4" AllowSorting="True">
                 <Columns>
                     <asp:BoundField DataField="emp_cd" HeaderText="従業員コード" ReadOnly="True" SortExpression="emp_cd" />
                     <asp:BoundField DataField="last_nm" HeaderText="氏" SortExpression="last_nm" />
