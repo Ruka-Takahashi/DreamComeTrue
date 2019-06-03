@@ -2,16 +2,7 @@
 body {
     text-align:center;
 }
-/*table{
-    margin:8px auto;
-    border:double;
-}
-th{
-    border:1px solid black;
-    padding:8px;
-    border:solid;
-    border-width:thin;
-}*/
+
 .blue{
     background-color:lightcyan;
 }
@@ -36,23 +27,6 @@ h1:first-letter {
     background: linear-gradient(transparent 60%, #ffff66 60%);
     font-size:80%;
 }
-/*.corsol{
-    
-    padding:0.3em 1em;
-    text-decoration:none;
-    color:#00bfff;
-    border:solid 2px white;
-    border-radius:3px;
-    transition:.4s;
-
-}*/
-/*th{
-    font-weight: lighter;
-}*/
-/*.corsol:hover{
-    background:aqua;
-    color:white;
-}*/
 
 
 .corsol:hover {
