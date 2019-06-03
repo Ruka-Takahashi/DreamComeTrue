@@ -24,3 +24,6 @@ h1:first-letter {
     background: #888;
     margin: 0 auto;
 }
+.btn:hover{
+    background-color:red;
+}

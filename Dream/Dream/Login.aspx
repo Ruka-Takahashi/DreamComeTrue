@@ -18,7 +18,7 @@
         </p>
         <p>パスワード：<asp:TextBox  ID="TextBox2" runat="server"  Height="20px" Width="135px" TextMode="Password"></asp:TextBox>
         </p>
-        <asp:Button ID="Button1" CssClass="corsol" runat="server" Text="ログイン" OnClick="Button1_Click" name="In_button"/>
+        <asp:Button ID="Button1"  CssClass="corsol" runat="server" Text="ログイン" OnClick="Button1_Click" name="In_button"/>
         <hr />
         <p>＠<span class="span1">夢創造委員会</span><br /><span class="span2">The Dream Creation Committee</span></p>
 

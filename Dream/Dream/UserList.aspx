@@ -51,7 +51,7 @@
         <br />
         <asp:Button ID="UpDateButton" runat="server" Text="更新" OnClick="UpDateButton_Click" />
         &nbsp;&nbsp;&nbsp;
-        <asp:Button ID="DeleteButton" runat="server" Text="削除" OnClick="DeleteButton_Click" />
+        <asp:Button CssClass="btn" ID="DeleteButton" runat="server" Text="削除" OnClick="DeleteButton_Click" />
         &nbsp;&nbsp;&nbsp;
         <asp:Button ID="Button1" runat="server" Text="戻る" name="Back_button" OnClick="Button1_Click"/>
 </div>        
