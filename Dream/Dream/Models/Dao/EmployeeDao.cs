@@ -98,6 +98,25 @@ namespace Dream.Models.Dao
             }
             return EU;
         }
+
+        public int IDcheck(string emp_code)
+        {
+            int count = 0;
+            using (SqlCommand cmd = new SqlCommand("Select * FROM m_employee WHERE emp_cd = @emp_code", con, trn))
+            {
+                cmd.Parameters.Add(new SqlParameter("@emp_code", SqlDbType.Char)).Value = emp_code;
+
+                using (SqlDataReader reader = cmd.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        count++;
+                    }
+                    reader.Close();
+                }
+            }
+            return count;
+        }
         public string UpDate(string emp_cd, string last_nm, string first_nm, string last_nm_kana, string first_nm_kana, int gender_cd, string section_cd)
         {
             string error = "";

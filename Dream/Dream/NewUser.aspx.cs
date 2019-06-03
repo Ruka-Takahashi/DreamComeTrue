@@ -61,29 +61,37 @@ namespace Dream
                 using (TranMng TM = new TranMng())
                 {
                     //現在保存しているセッションを削除
-                    EmployeeDao ID = new EmployeeDao();
+                    EmployeeDao EmpD = new EmployeeDao();
                     Session.Remove("msg");
                     string error = "";
-                    try
+                    int count = EmpD.IDcheck(TextBox1.Text);
+                    if (count != 0)
                     {
-                        //入力された情報をインサート文に渡す。
-                        //エラーにはエラーメッセージが返ってくる
-                        string BirthDay = BirthYearList.Text + "/" + BirthMonthList.Text + "/" + BirthDayList.Text;
-                        string Join = JoinYearList.Text + "/" + JoinMonthList.Text + "/" + JoinDayList.Text;
-                        error = ID.Insert(TextBox1.Text, TextBox2.Text, TextBox4.Text, TextBox3.Text, TextBox5.Text, int.Parse(DropDownList1.Text), BirthDay, DropDownList2.Text, Join);
+                        Label1.Text = "その従業員コードは使われています。";
+                    }
+                    else
+                    {
+                        //try
+                        //{
+                            //入力された情報をインサート文に渡す。
+                            //エラーにはエラーメッセージが返ってくる
+                            string BirthDay = BirthYearList.Text + "/" + BirthMonthList.Text + "/" + BirthDayList.Text;
+                            string Join = JoinYearList.Text + "/" + JoinMonthList.Text + "/" + JoinDayList.Text;
+                            error = EmpD.Insert(TextBox1.Text, TextBox2.Text, TextBox4.Text, TextBox3.Text, TextBox5.Text, int.Parse(DropDownList1.Text), BirthDay, DropDownList2.Text, Join);
 
+                        //}
+                        ////catch (FormatException)
+                        ////{
+                        ////    Label1.Text = "未入力項目があります";
+                        ////}
+                        ////Server.Transfer("Result.aspx");
+                        //catch (FormatException)
+                        //{
+                        //    Label1.Text = "未入力項目があります。";
+                        //}
+                        Session.Add("msg", error);
+                        Server.Transfer("Result.aspx");
                     }
-                    //catch (FormatException)
-                    //{
-                    //    Label1.Text = "未入力項目があります";
-                    //}
-                    //Server.Transfer("Result.aspx");
-                    catch (FormatException)
-                    {
-                       Label1.Text = "未入力項目があります。";
-                    }
-                    Session.Add("msg", error);
-                    Server.Transfer("Result.aspx");
                 }
             }
         }
