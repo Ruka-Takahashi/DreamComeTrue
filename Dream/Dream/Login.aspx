@@ -13,12 +13,12 @@
     <form id="form1" runat="server">
     <div>
         <h1>夢創造委員会</h1>
-        <h2>ログイン</h2>
-        <p>ユーザID：<asp:TextBox  ID="TextBox1" runat="server"  Height="20px" Width="150px"></asp:TextBox>
+        <h2>LOGIN</h2>
+        <p>USER ID<br /><asp:TextBox  ID="TextBox1" runat="server"  Height="20px" Width="200px"></asp:TextBox>
         </p>
-        <p>パスワード：<asp:TextBox  ID="TextBox2" runat="server"  Height="20px" Width="135px" TextMode="Password"></asp:TextBox>
+        <p>PASSWORD<br /><asp:TextBox  ID="TextBox2" runat="server"  Height="20px" Width="200px" TextMode="Password"></asp:TextBox>
         </p>
-        <asp:Button ID="Button1"  CssClass="corsol" runat="server" Text="ログイン" OnClick="Button1_Click" name="In_button"/>
+        <asp:Button ID="Button1"  CssClass="corsol" runat="server" Text="LOGIN" OnClick="Button1_Click" name="In_button"/>
         <hr />
         <p>＠<span class="span1">夢創造委員会</span><br /><span class="span2">The Dream Creation Committee</span></p>
 
