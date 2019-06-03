@@ -91,6 +91,10 @@
         </asp:SqlDataSource>
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="戻る" />
+        <br />
+        <hr />
+        <p>＠<span class="span1">夢創造委員会</span><br /><span class="span2">The Dream Creation Committee</span></p>
+
     </form>
 </body>
 </html>
